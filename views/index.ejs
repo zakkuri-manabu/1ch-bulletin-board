@@ -6,6 +6,13 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <% if(data) { %>
+      <% for(var d of data) { %>
+        <p><a href='<%= d.url %>'><%= d.text %></a></p>
+      <% } %>
+    <% } else { %>
+      <p>Data is null</p>
+    <% } %>
+    <a href='/message/create'>message create</a>
   </body>
 </html>

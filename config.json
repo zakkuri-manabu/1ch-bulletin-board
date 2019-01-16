@@ -1,0 +1,8 @@
+{
+    "url": "mongodb://heroku_p9ffzz1l:npto6gmq2d4hhqhkdm4dab3t6h@ds157654.mlab.com:57654/heroku_p9ffzz1l",
+    "password": "npto6gmq2d4hhqhkdm4dab3t6h",
+    "user": "heroku_p9ffzz1l",
+    "host": "ds157654.mlab.com",
+    "port": "57654",
+    "db":"heroku_p9ffzz1l"
+}

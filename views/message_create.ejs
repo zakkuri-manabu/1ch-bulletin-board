@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form action='/message/create' method="post">
+        <input type="textarea" name='text'/>
+        <input type="submit" value="message create"/>
+    </form>
+  </body>
+</html>

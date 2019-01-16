@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <% if(data) { %>
+      <form action='/message/edit/<%= data._id %>' method="post">
+        <p><%= data._id %></p>
+        <input type="textarea" name='text' value='<%= data.text %>'/>
+        <input type="submit" value="message update really?"/>
+      </form>
+    <% } else { %>
+      <p>Data is null</p>
+    <% } %>
+  </body>
+</html>
