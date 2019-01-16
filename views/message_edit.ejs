@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%- include('./head_config') %>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <% if(data) { %>
-      <form action='/message/edit/<%= data._id %>' method="post">
-        <p><%= data._id %></p>
-        <input type="textarea" name='text' value='<%= data.text %>'/>
-        <input type="submit" value="message update really?"/>
-      </form>
-    <% } else { %>
-      <p>Data is null</p>
-    <% } %>
+    <%- include('./header') %>
+    <div class="row">
+
+      <div class="col s3">
+        <%- include('./sidebar') %>
+      </div>
+      <div class="col s9">
+        <% if(data) { %>
+          <div class="card blue-grey darken-1">
+            <form action='/message/edit/<%= data._id %>' method="post">
+              <div class="card-content white-text">
+                <span class="card-title"><%= data._id %></span>
+                <div class="input-field">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea" name='text'></textarea>
+                    <label for="textarea1">Textarea</label>
+                  </div>
+                </div>
+              </div>
+              <div class="card-action">
+                <button class="btn waves-effect waves-light orange accent-2" type="submit" name="action" value="message create">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </form>
+          </div>
+        <% } else { %>
+          <p>Message is null</p>
+        <% } %>
+      </div>
+    </div>
+    <%- include('./footer') %>
+    <%- include('./body_config') %>
   </body>
 </html>

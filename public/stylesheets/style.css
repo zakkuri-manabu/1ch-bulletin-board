@@ -1,8 +1,15 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+/*body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
+  color: #616161;
+  background-color: #fafafa;
+}
 
-a {
-  color: #00B7FF; }
+a:link {
+    color: #d50000;
+}
+
+.card-title {
+    color: #616161;
+}*/
 
 /*# sourceMappingURL=style.css.map */
